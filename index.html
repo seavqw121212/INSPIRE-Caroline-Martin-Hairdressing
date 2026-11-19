@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INSPIRE Caroline Martin Hairdressing | Premium Hair Salon, Roosky, Monaghan</title>
+<meta name="description" content="Expert hair styling and luxury colour in Monaghan. 5.0 rated by 241 clients. 14 Church Square, Roosky, Monaghan, H18 KV10.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Montserrat','system-ui','sans-serif']},colors:{ivory:'#FBF8F4',sand:'#F1E8DC',ink:'#26231F',bronze:'#A8794A',bronzed:'#8A5F36'}}}}
+</script>
+<style>
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',system-ui,sans-serif;background:#FBF8F4;color:#26231F}
+.view{display:none}.view.active{display:block;animation:in .35s ease}
+@keyframes in{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.view.active{animation:none}html{scroll-behavior:auto}}
+:focus-visible{outline:2px solid #A8794A;outline-offset:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.6rem;border-radius:999px;font-weight:600;font-size:.875rem;transition:.2s}
+.btn-dark{background:#26231F;color:#fff}.btn-dark:hover{background:#A8794A}
+.btn-line{border:1.5px solid #26231F}.btn-line:hover{background:#26231F;color:#fff}
+.btn-bronze{background:#A8794A;color:#fff}.btn-bronze:hover{background:#8A5F36}
+.card{background:#fff;border:1px solid #EADFD0;border-radius:1.25rem}
+.chip{padding:.65rem 1rem;border:1.5px solid #E3D6C4;border-radius:.75rem;font-weight:500;font-size:.875rem;background:#fff;transition:.15s}
+.chip:hover{border-color:#A8794A}.chip.sel{background:#26231F;color:#fff;border-color:#26231F}
+.chip:disabled{opacity:.35;cursor:not-allowed}
+.field{width:100%;padding:.85rem 1rem;border:1.5px solid #E3D6C4;border-radius:.75rem;background:#fff}
+.field:focus{outline:none;border-color:#A8794A}
+.nav-link{font-size:.85rem;font-weight:500;padding:.35rem 0;border-bottom:2px solid transparent;color:#5b544b}
+.nav-link:hover,.nav-link.on{color:#26231F;border-color:#A8794A}
+.tile{position:relative;overflow:hidden;border-radius:1.25rem;display:flex;align-items:flex-end;padding:1.1rem;color:#fff;min-height:12rem}
+.tile span{font-weight:600;font-size:.95rem;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-ivory/90 backdrop-blur border-b border-[#EADFD0]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 lg:h-20 flex items-center gap-3">
+    <button id="backBtn" class="hidden items-center gap-1 text-sm font-semibold px-3 py-2 rounded-full hover:bg-sand" aria-label="Go back">&larr; Back</button>
+    <a href="#" data-go="home" class="leading-tight mr-auto">
+      <span class="block text-lg lg:text-xl font-bold tracking-[.18em]">INSPIRE</span>
+      <span class="block text-[10px] lg:text-[11px] tracking-wide text-bronze font-medium">Caroline Martin Hairdressing</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7" aria-label="Main">
+      <a href="#" data-go="home" class="nav-link">Home</a>
+      <a href="#" data-go="services" class="nav-link">Services</a>
+      <a href="#" data-go="team" class="nav-link">Team</a>
+      <a href="#" data-go="gallery" class="nav-link">Gallery</a>
+      <a href="#" data-go="booking" class="nav-link">Booking</a>
+      <a href="#" data-go="contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="#" data-go="booking" class="btn btn-dark hidden sm:inline-flex ml-4">Book Appointment</a>
+    <button id="menuBtn" class="lg:hidden p-2 rounded-lg hover:bg-sand" aria-label="Open menu" aria-expanded="false">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+  </div>
+  <nav id="mobileNav" class="hidden lg:hidden border-t border-[#EADFD0] bg-ivory px-4 py-3 grid gap-1" aria-label="Mobile">
+    <a href="#" data-go="home" class="py-3 font-medium">Home</a>
+    <a href="#" data-go="services" class="py-3 font-medium">Services &amp; Pricing</a>
+    <a href="#" data-go="team" class="py-3 font-medium">Team</a>
+    <a href="#" data-go="gallery" class="py-3 font-medium">Gallery</a>
+    <a href="#" data-go="hours" class="py-3 font-medium">Hours &amp; Reviews</a>
+    <a href="#" data-go="contact" class="py-3 font-medium">Contact</a>
+    <a href="#" data-go="booking" class="btn btn-dark mt-2">Book Appointment</a>
+  </nav>
+</header>
+
+<main>
+<!-- HOME -->
+<section id="home" class="view active">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-bronze font-semibold text-sm mb-4">Premium Hair Salon &amp; Hairdressing Studio</p>
+      <h1 class="text-4xl sm:text-5xl xl:text-6xl font-light leading-[1.1] tracking-tight">Expert Hair Styling &amp; Luxury Color in Monaghan</h1>
+      <p class="mt-6 text-lg text-[#5b544b] max-w-xl leading-relaxed">Welcome to INSPIRE, Caroline Martin's boutique studio on Church Square in Roosky. Every visit begins with a proper consultation, so your cut, colour or bridal style suits you and your everyday life.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#" data-go="booking" class="btn btn-dark">Book Appointment</a>
+        <a href="#" data-go="services" class="btn btn-line">View Services &amp; Prices</a>
+      </div>
+      <div class="mt-10 flex gap-8 sm:gap-12">
+        <div><p class="text-4xl font-light">5.0<span class="text-bronze">★</span></p><p class="text-sm text-[#5b544b] mt-1">Average rating</p></div>
+        <div class="border-l border-[#E3D6C4] pl-8 sm:pl-12"><p class="text-4xl font-light">241+</p><p class="text-sm text-[#5b544b] mt-1">Client reviews</p></div>
+        <div class="border-l border-[#E3D6C4] pl-8 sm:pl-12"><p class="text-4xl font-light">07:00</p><p class="text-sm text-[#5b544b] mt-1">Early opening</p></div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="tile row-span-2 min-h-[22rem]" style="background:linear-gradient(160deg,#C9A27A,#7A5230)"><span>Soft balayage</span></div>
+      <div class="tile" style="background:linear-gradient(135deg,#E8D5BD,#B98F66)"><span>Precision cut</span></div>
+      <div class="tile" style="background:linear-gradient(135deg,#3b332c,#8A6A4B)"><span>Rich brunette</span></div>
+    </div>
+  </div>
+  <div class="bg-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 grid sm:grid-cols-3 gap-4">
+      <a href="#" data-go="gallery" class="card p-6 hover:border-bronze transition"><h3 class="font-semibold">See our work</h3><p class="text-sm text-[#5b544b] mt-2">Cuts, colour and occasion styling from the studio.</p></a>
+      <a href="#" data-go="hours" class="card p-6 hover:border-bronze transition"><h3 class="font-semibold">Hours &amp; reviews</h3><p class="text-sm text-[#5b544b] mt-2">Opening times and what 241 clients say about us.</p></a>
+      <a href="#" data-go="contact" class="card p-6 hover:border-bronze transition"><h3 class="font-semibold">Find the salon</h3><p class="text-sm text-[#5b544b] mt-2">14 Church Square, Roosky, Monaghan.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="view">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-12 lg:py-20">
+    <h2 class="text-3xl sm:text-4xl font-light">Services &amp; Pricing</h2>
+    <p class="mt-3 text-[#5b544b] max-w-2xl">Choose a treatment to go straight to booking. Prices are a guide and are confirmed at your consultation.</p>
+    <div id="serviceList" class="mt-10 grid md:grid-cols-2 gap-4"></div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="view">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 lg:py-20">
+    <h2 class="text-3xl sm:text-4xl font-light">Meet the team</h2>
+    <p class="mt-3 text-[#5b544b] max-w-2xl">A small, dedicated team led by Caroline Martin.</p>
+    <div class="mt-10 grid sm:grid-cols-3 gap-5">
+      <div class="card overflow-hidden"><div class="h-56" style="background:linear-gradient(160deg,#D9BE9B,#8A5F36)"></div><div class="p-6"><h3 class="font-semibold">Caroline Martin</h3><p class="text-bronze text-sm">Owner &amp; Creative Director</p><p class="text-sm text-[#5b544b] mt-3">Founder of INSPIRE, specialising in colour, cutting and bridal styling.</p></div></div>
+      <div class="card overflow-hidden"><div class="h-56" style="background:linear-gradient(160deg,#EADCC8,#B4876A)"></div><div class="p-6"><h3 class="font-semibold">Senior Stylist</h3><p class="text-bronze text-sm">Cutting &amp; Styling</p><p class="text-sm text-[#5b544b] mt-3">Add team member details here.</p></div></div>
+      <div class="card overflow-hidden"><div class="h-56" style="background:linear-gradient(160deg,#4a3f35,#9b7a58)"></div><div class="p-6"><h3 class="font-semibold">Colour Specialist</h3><p class="text-bronze text-sm">Colour &amp; Treatments</p><p class="text-sm text-[#5b544b] mt-3">Add team member details here.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="view">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-20">
+    <h2 class="text-3xl sm:text-4xl font-light">Gallery</h2>
+    <p class="mt-3 text-[#5b544b] max-w-2xl">A look at the colour, cuts and occasion styling that come out of our studio. Swap the gradient tiles for your own photos.</p>
+    <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-4 [grid-auto-flow:dense]">
+      <div class="tile lg:row-span-2 min-h-[20rem]" style="background:linear-gradient(160deg,#E6C9A0,#9A6A3C)"><span>Golden balayage</span></div>
+      <div class="tile" style="background:linear-gradient(135deg,#2c2621,#7b5d44)"><span>Deep espresso</span></div>
+      <div class="tile" style="background:linear-gradient(135deg,#F0E1CC,#C9A98A)"><span>Creamy blonde</span></div>
+      <div class="tile lg:col-span-1" style="background:linear-gradient(135deg,#B3714E,#5e3523)"><span>Copper gloss</span></div>
+      <div class="tile lg:col-span-2" style="background:linear-gradient(120deg,#EADCC8,#A8794A)"><span>Bridal updo</span></div>
+      <div class="tile" style="background:linear-gradient(135deg,#6b5a4c,#cdb59b)"><span>Soft layers</span></div>
+      <div class="tile" style="background:linear-gradient(135deg,#D8C3A8,#4a3a2e)"><span>Blow dry finish</span></div>
+      <div class="tile" style="background:linear-gradient(135deg,#9d7b5c,#f3e9dc)"><span>Lived-in colour</span></div>
+    </div>
+    <div class="mt-10"><a href="#" data-go="booking" class="btn btn-dark">Book your look</a></div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="view">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-12 lg:py-20">
+    <h2 class="text-3xl sm:text-4xl font-light">Book an appointment</h2>
+    <div class="mt-6 flex items-center gap-2" id="stepper" aria-label="Booking progress"></div>
+    <p id="stepLabel" class="mt-3 text-sm text-[#5b544b]"></p>
+    <div id="bookBody" class="card p-5 sm:p-8 mt-6"></div>
+  </div>
+</section>
+
+<!-- HOURS & REVIEWS -->
+<section id="hours" class="view">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 lg:py-20 grid lg:grid-cols-5 gap-10">
+    <div class="lg:col-span-2">
+      <h2 class="text-3xl sm:text-4xl font-light">Opening hours</h2>
+      <div class="card mt-6 p-2" id="hoursTable"></div>
+      <p class="text-xs text-[#5b544b] mt-3">Please confirm hours with the salon before visiting.</p>
+    </div>
+    <div class="lg:col-span-3">
+      <h2 class="text-3xl sm:text-4xl font-light">Client reviews</h2>
+      <p class="mt-2 text-bronze font-semibold">5.0 ★ from 241 reviews</p>
+      <div class="mt-6 grid gap-4">
+        <figure class="card p-6"><div class="text-bronze">★★★★★</div><blockquote class="mt-2 leading-relaxed">Sample review: Caroline listened to exactly what I wanted and my colour has never looked better. Replace with a real client review.</blockquote><figcaption class="mt-3 text-sm font-semibold">Client name</figcaption></figure>
+        <figure class="card p-6"><div class="text-bronze">★★★★★</div><blockquote class="mt-2 leading-relaxed">Sample review: Relaxed, friendly and so professional. Booked for my wedding and the team were incredible. Replace with a real client review.</blockquote><figcaption class="mt-3 text-sm font-semibold">Client name</figcaption></figure>
+        <figure class="card p-6"><div class="text-bronze">★★★★★</div><blockquote class="mt-2 leading-relaxed">Sample review: The best cut I've had. Worth the drive to Roosky every time. Replace with a real client review.</blockquote><figcaption class="mt-3 text-sm font-semibold">Client name</figcaption></figure>
+      </div>
+      <a href="#" data-go="booking" class="btn btn-dark mt-8">Book Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="view">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 lg:py-20 grid lg:grid-cols-2 gap-10">
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-light">Contact &amp; location</h2>
+      <div class="mt-8 space-y-6">
+        <div><h3 class="font-semibold">Address</h3><address class="not-italic text-[#5b544b] mt-1 leading-relaxed">INSPIRE Caroline Martin Hairdressing<br>14 Church Square, Roosky<br>Monaghan, H18 KV10<br>Ireland</address></div>
+        <div><h3 class="font-semibold">Phone</h3><a href="tel:+353000000000" class="text-bronze font-medium mt-1 inline-block">+353 00 000 0000</a> <span class="text-xs text-[#5b544b]">(replace with the salon's number)</span></div>
+        <div><h3 class="font-semibold">Opening</h3><p class="text-[#5b544b] mt-1">From 07:00. <a href="#" data-go="hours" class="text-bronze underline">See full hours</a></p></div>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a class="btn btn-bronze" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/?api=1&destination=INSPIRE+Caroline+Martin+Hairdressing+14+Church+Square+Roosky+Monaghan+H18+KV10">Get directions</a>
+        <a href="#" data-go="booking" class="btn btn-line">Book Appointment</a>
+      </div>
+    </div>
+    <div class="card overflow-hidden min-h-[22rem]">
+      <iframe title="Map of INSPIRE Caroline Martin Hairdressing" class="w-full h-full min-h-[22rem] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=14+Church+Square+Roosky+Monaghan+H18+KV10&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-[#d9d0c4] mt-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 grid md:grid-cols-3 gap-10">
+    <div>
+      <p class="text-white text-lg font-bold tracking-[.18em]">INSPIRE</p>
+      <p class="text-sm mt-1">Caroline Martin Hairdressing</p>
+      <p class="text-sm mt-4 leading-relaxed">Premium Hair Salon &amp; Hairdressing Studio<br>14 Church Square, Roosky, Monaghan, H18 KV10<br>5.0 ★ from 241 client reviews</p>
+    </div>
+    <div class="text-sm grid gap-2 content-start">
+      <a href="#" data-go="services" class="hover:text-white">Services &amp; Pricing</a>
+      <a href="#" data-go="gallery" class="hover:text-white">Gallery</a>
+      <a href="#" data-go="hours" class="hover:text-white">Hours &amp; Reviews</a>
+      <a href="#" data-go="contact" class="hover:text-white">Contact</a>
+    </div>
+    <div class="flex gap-3 md:justify-end items-start">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)" class="w-11 h-11 rounded-full border border-[#5b544b] grid place-items-center hover:bg-bronze hover:border-bronze">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)" class="w-11 h-11 rounded-full border border-[#5b544b] grid place-items-center hover:bg-bronze hover:border-bronze">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.600-1.500h1.700V3.200C16.500 3.100 15.500 3 14.400 3 12 3 10.300 4.500 10.300 7.100v2.700H7.500V13h2.800v8z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="border-t border-[#3d372f] text-center text-xs py-5 px-4">&copy; <span id="yr"></span> INSPIRE Caroline Martin Hairdressing. All rights reserved.</div>
+</footer>
+
+<script>
+const SERVICES=[
+ {id:'cut',name:'Cut & Blow Dry',price:55,time:60,desc:'Consultation, precision cut and a polished blow dry.'},
+ {id:'balayage',name:'Full Head Highlights / Balayage',price:140,time:180,desc:'Hand-painted or foil colour for dimension and shine.'},
+ {id:'colour',name:'Creative Coloring',price:95,time:120,desc:'Vivid shades, toning and bespoke colour work.'},
+ {id:'bridal',name:'Bridal Hair Styling',price:120,time:90,desc:'Trial and wedding-day styling, tailored to your dress.'},
+ {id:'treat',name:'Treatments',price:45,time:45,desc:'Deep conditioning and repair to restore strength and shine.'},
+ {id:'dry',name:'Blow Dry & Style',price:35,time:45,desc:'Smooth, volume or waves for any occasion.'}
+];
+const HOURS=[['Monday','07:00','18:00'],['Tuesday','07:00','19:00'],['Wednesday','07:00','19:00'],['Thursday','07:00','20:00'],['Friday','07:00','19:00'],['Saturday','07:00','17:00'],['Sunday',null,null]];
+const euro=n=>'€'+n;
+const $=s=>document.querySelector(s);
+
+/* ---------- Navigation with history stack ---------- */
+const stack=['home'];
+function show(id,push=true){
+  document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));
+  if(push&&stack[stack.length-1]!==id)stack.push(id);
+  $('#backBtn').classList.toggle('hidden',stack.length<2);
+  $('#backBtn').classList.toggle('inline-flex',stack.length>=2);
+  document.querySelectorAll('.nav-link').forEach(a=>a.classList.toggle('on',a.dataset.go===id));
+  $('#mobileNav').classList.add('hidden');$('#menuBtn').setAttribute('aria-expanded','false');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(id==='booking'&&B.step===0&&!B.service)renderBooking();
+}
+function back(){if(stack.length>1){stack.pop();show(stack[stack.length-1],false)}}
+document.addEventListener('click',e=>{
+  const a=e.target.closest('[data-go]');
+  if(a){e.preventDefault();show(a.dataset.go)}
+});
+$('#backBtn').onclick=back;
+$('#menuBtn').onclick=()=>{const n=$('#mobileNav');const h=n.classList.toggle('hidden');$('#menuBtn').setAttribute('aria-expanded',String(!h))};
+
+/* ---------- Services ---------- */
+$('#serviceList').innerHTML=SERVICES.map(s=>`
+<button data-svc="${s.id}" class="card p-6 text-left hover:border-bronze hover:shadow-md transition w-full">
+  <div class="flex justify-between gap-4 items-baseline"><h3 class="font-semibold">${s.name}</h3><span class="text-bronze font-semibold whitespace-nowrap">from ${euro(s.price)}</span></div>
+  <p class="text-sm text-[#5b544b] mt-2">${s.desc}</p>
+  <p class="text-xs mt-4 text-[#5b544b]">${s.time} min &middot; <span class="font-semibold text-ink">Book this service</span></p>
+</button>`).join('');
+$('#serviceList').addEventListener('click',e=>{
+  const b=e.target.closest('[data-svc]');if(!b)return;
+  B.service=SERVICES.find(s=>s.id===b.dataset.svc);B.date=null;B.time=null;B.step=1;renderBooking();show('booking');
+});
+
+/* ---------- Hours table ---------- */
+$('#hoursTable').innerHTML=HOURS.map(([d,o,c],i)=>`<div class="flex justify-between px-4 py-3 ${i<6?'border-b border-[#EFE5D6]':''}"><span class="font-medium">${d}</span><span class="${o?'':'text-[#8b8378]'}">${o?o+' – '+c:'Closed'}</span></div>`).join('');
+
+/* ---------- Booking flow ---------- */
+const STEPS=['Service','Date','Time','Your details','Confirmed'];
+const B={step:0,service:null,date:null,time:null,name:'',phone:''};
+const taken=(d,t)=>{const k=d.getDate()*7+parseInt(t)*3;return k%5===0}; // demo: some slots unavailable
+function days(){const out=[];const d=new Date();d.setHours(0,0,0,0);
+  for(let i=1;out.length<14;i++){const x=new Date(d);x.setDate(d.getDate()+i);if(HOURS[(x.getDay()+6)%7][1])out.push(x)}return out}
+function slotsFor(d){const [,o,c]=HOURS[(d.getDay()+6)%7];const s=[];
+  for(let h=parseInt(o);h+1<=parseInt(c)-(B.service?Math.ceil(B.service.time/60)-1:0);h++){['00','30'].forEach(m=>{if(h+B.service.time/60<=parseInt(c)+0.01)s.push(`${String(h).padStart(2,'0')}:${m}`)})}return s}
+const fmtDate=d=>d.toLocaleDateString('en-IE',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+
+function renderBooking(){
+  $('#stepper').innerHTML=STEPS.map((_,i)=>`<span class="h-1.5 flex-1 rounded-full ${i<=B.step?'bg-bronze':'bg-[#E3D6C4]'}"></span>`).join('');
+  $('#stepLabel').textContent=`Step ${B.step+1} of 5: ${STEPS[B.step]}`;
+  const el=$('#bookBody');let h='';
+  const nav=(prev,next,label='Continue',ok=true)=>`<div class="mt-8 flex justify-between gap-3">${prev?'<button class="btn btn-line" data-act="prev">Back</button>':'<span></span>'}${next?`<button class="btn btn-dark ${ok?'':'opacity-40 pointer-events-none'}" data-act="next" ${ok?'':'disabled'}>${label}</button>`:''}</div>`;
+  if(B.step===0){
+    h=`<h3 class="font-semibold text-lg">Choose a service</h3><div class="mt-5 grid gap-3">${SERVICES.map(s=>`<button class="chip text-left flex justify-between gap-3 ${B.service&&B.service.id===s.id?'sel':''}" data-pick="${s.id}"><span>${s.name}<br><small class="opacity-70">${s.time} min</small></span><span>${euro(s.price)}</span></button>`).join('')}</div>`+nav(false,true,'Continue',!!B.service);
+  }else if(B.step===1){
+    h=`<h3 class="font-semibold text-lg">Pick a date</h3><div class="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-3">${days().map(d=>`<button class="chip ${B.date&&B.date.getTime()===d.getTime()?'sel':''}" data-date="${d.getTime()}">${d.toLocaleDateString('en-IE',{weekday:'short',day:'numeric',month:'short'})}</button>`).join('')}</div>`+nav(true,true,'Continue',!!B.date);
+  }else if(B.step===2){
+    const sl=slotsFor(B.date);
+    h=`<h3 class="font-semibold text-lg">Pick a time</h3><p class="text-sm text-[#5b544b] mt-1">${fmtDate(B.date)}</p><div class="mt-5 grid grid-cols-3 sm:grid-cols-5 gap-3">${sl.map(t=>`<button class="chip ${B.time===t?'sel':''}" data-time="${t}" ${taken(B.date,t)?'disabled':''}>${t}</button>`).join('')}</div>`+nav(true,true,'Continue',!!B.time);
+  }else if(B.step===3){
+    h=`<h3 class="font-semibold text-lg">Your details</h3>
+    <div class="mt-5 grid gap-4"><label class="grid gap-1 text-sm font-medium">Full name<input id="fName" class="field" autocomplete="name" value="${B.name}" placeholder="e.g. Aoife Murphy"></label>
+    <label class="grid gap-1 text-sm font-medium">Mobile phone<input id="fPhone" class="field" type="tel" inputmode="tel" autocomplete="tel" value="${B.phone}" placeholder="e.g. 087 123 4567"></label>
+    <p id="fErr" class="text-sm text-red-700 min-h-5"></p></div>`+nav(true,true,'Confirm booking');
+  }else{
+    h=`<div class="text-center"><div class="mx-auto w-14 h-14 rounded-full bg-bronze text-white grid place-items-center text-2xl">✓</div><h3 class="text-2xl font-light mt-4">You're booked, ${B.name.split(' ')[0]}</h3><p class="text-sm text-[#5b544b] mt-2">We'll text your mobile if anything changes.</p></div>
+    <dl class="mt-8 divide-y divide-[#EFE5D6] text-sm">
+      <div class="flex justify-between py-3"><dt class="text-[#5b544b]">Service</dt><dd class="font-semibold text-right">${B.service.name}</dd></div>
+      <div class="flex justify-between py-3"><dt class="text-[#5b544b]">Date</dt><dd class="font-semibold text-right">${fmtDate(B.date)}</dd></div>
+      <div class="flex justify-between py-3"><dt class="text-[#5b544b]">Time</dt><dd class="font-semibold">${B.time} (${B.service.time} min)</dd></div>
+      <div class="flex justify-between py-3"><dt class="text-[#5b544b]">Guide price</dt><dd class="font-semibold">${euro(B.service.price)}</dd></div>
+      <div class="flex justify-between py-3"><dt class="text-[#5b544b]">Name</dt><dd class="font-semibold">${B.name}</dd></div>
+      <div class="flex justify-between py-3"><dt class="text-[#5b544b]">Mobile</dt><dd class="font-semibold">${B.phone}</dd></div>
+      <div class="flex justify-between py-3"><dt class="text-[#5b544b]">Where</dt><dd class="font-semibold text-right">14 Church Square, Roosky,<br>Monaghan, H18 KV10</dd></div>
+    </dl>
+    <div class="mt-8 flex flex-wrap gap-3 justify-center"><button class="btn btn-dark" data-act="new">Make another booking</button><button class="btn btn-line" data-go="home">Back to home</button></div>`;
+  }
+  el.innerHTML=h;
+}
+$('#bookBody').addEventListener('click',e=>{
+  const t=e.target.closest('button');if(!t)return;
+  if(t.dataset.pick){B.service=SERVICES.find(s=>s.id===t.dataset.pick);B.time=null;renderBooking()}
+  else if(t.dataset.date){B.date=new Date(+t.dataset.date);B.time=null;renderBooking()}
+  else if(t.dataset.time){B.time=t.dataset.time;renderBooking()}
+  else if(t.dataset.act==='prev'){B.step--;renderBooking()}
+  else if(t.dataset.act==='new'){Object.assign(B,{step:0,service:null,date:null,time:null,name:'',phone:''});renderBooking()}
+  else if(t.dataset.act==='next'){
+    if(B.step===3){
+      const n=$('#fName').value.trim(),p=$('#fPhone').value.trim();B.name=n;B.phone=p;
+      if(n.length<2)return $('#fErr').textContent='Please enter your full name.';
+      if(p.replace(/\D/g,'').length<7)return $('#fErr').textContent='Please enter a valid mobile number.';
+    }
+    B.step++;renderBooking();window.scrollTo({top:0,behavior:'smooth'});
+  }
+});
+document.addEventListener('click',e=>{if(e.target.closest('[data-go="booking"]')&&B.step===4){/* keep confirmation until reset */}});
+$('#yr').textContent=new Date().getFullYear();
+renderBooking();
+</script>
+</body>
+</html>
